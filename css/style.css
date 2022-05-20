@@ -1,43 +1,119 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 .top {
-    padding: 5%;
+  padding: 5%;
 }
 
 .hamburger {
-    display: block;
-    cursor: pointer;
-
+  display: block;
+  cursor: pointer;
 }
 
 .line {
-    display: block;
-    width: 40px;
-    height: 6px;
-    margin: 8px 10px;
-    background-color: #676767;
+  display: block;
+  width: 40px;
+  height: 6px;
+  margin: 8px 10px;
+  background-color: #676767;
 }
 
 .top h3 {
-    color: #f15724;
-    display: block;
-    margin-top: 65px;
+  color: #f15724;
+  display: block;
+  margin-top: 65px;
 }
 
 .top h1 {
-    margin-top: -12px;
-    color: #d82d0d;
+  margin-top: -12px;
+  color: #d82d0d;
 }
 
 .top p {
-    color:#504949;
+  color: #504949;
 }
 
 .top h2 {
-    color: #494747;
+  color: #494747;
+}
+
+.program {
+  background: url("../images/program-bg.jpeg");
+  background-size: cover;
+  padding: 20px 10px;
+}
+
+.program-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.program-card {
+  background-color: rgba(211, 211, 211, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.program .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7%;
+  padding-left: 8px;
+}
+
+.program h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.program h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: #f14d37;
+}
+
+.program p {
+  color: #fff;
+}
+
+.program-card img {
+  height: 35px;
+  width: 35px;
+}
+
+.program hr {
+  width: 15%;
+  margin-left: 43%;
+  background-color: orangered;
+  border: none;
+  height: 2px;
+}
+
+.join-button {
+  width: 70%;
+  margin: 20px 15%;
+  padding: 5% ;
+  text-align: center;
+  background-color: #ec5242;
+}
+
+.join-button a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  /* padding: 1.5rem; */
 }
