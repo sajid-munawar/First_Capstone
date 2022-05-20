@@ -26,33 +26,38 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     ];
     
-    const speakers = document.querySelector(".speakers");
+    const speakers = document.querySelector(".speakers");    
+    const more = document.querySelector('.more');
 
-    for (let i = 0; i < speakersData.length; i++) {
-            const speakerContainer = document.createElement("div");
-            speakerContainer.classList.add("speaker-container");
-            const speakerImage = document.createElement("img");
-            speakerImage.classList.add("speaker-image");
-            speakerImage.src = speakersData[i].image;
-            speakerImage.alt = speakersData[0].title;
-            speakerContainer.append(speakerImage);
-            const speakerDetails = document.createElement("div");
-            speakerDetails.classList.add("speaker-details");
-            const speakerTitle = document.createElement("h1");
-            speakerTitle.classList.add("speaker-title");
-            speakerTitle.innerText = speakersData[i].title;
-            speakerDetails.append(speakerTitle);
-            const redDesc = document.createElement("h3");
-            redDesc.classList.add("red-desc");
-            redDesc.innerText = speakersData[i].redDesc;
-            speakerDetails.append(redDesc);
-            const blackDesc = document.createElement("p");
-            blackDesc.classList.add("black-desc");
-            blackDesc.innerText = speakersData[i].blackDesc;
-            speakerDetails.append(blackDesc);
-            speakerContainer.append(speakerDetails);
-            speakers.append(speakerContainer);        
-    }
+    more.addEventListener('click', () => {
+        for (let i = 0; i < speakersData.length; i++) {
+          const speakerContainer = document.createElement("div");
+          speakerContainer.classList.add("speaker-container");
+          const speakerImage = document.createElement("img");
+          speakerImage.classList.add("speaker-image");
+          speakerImage.src = speakersData[i].image;
+          speakerImage.alt = speakersData[0].title;
+          speakerContainer.append(speakerImage);
+          const speakerDetails = document.createElement("div");
+          speakerDetails.classList.add("speaker-details");
+          const speakerTitle = document.createElement("h1");
+          speakerTitle.classList.add("speaker-title");
+          speakerTitle.innerText = speakersData[i].title;
+          speakerDetails.append(speakerTitle);
+          const redDesc = document.createElement("h3");
+          redDesc.classList.add("red-desc");
+          redDesc.innerText = speakersData[i].redDesc;
+          speakerDetails.append(redDesc);
+          const blackDesc = document.createElement("p");
+          blackDesc.classList.add("black-desc");
+          blackDesc.innerText = speakersData[i].blackDesc;
+          speakerDetails.append(blackDesc);
+          speakerContainer.append(speakerDetails);
+          speakers.append(speakerContainer);
+        }
+
+        more.style.display = 'none';
+    })
 
 
 });

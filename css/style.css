@@ -174,3 +174,15 @@ body {
   font-size: 0.7rem;
   margin-top: 0;
 }
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c5c0c0;
+  height: 50px;
+  width: 100%;
+  gap: 1%;
+  border-radius: 5px;
+}
+
