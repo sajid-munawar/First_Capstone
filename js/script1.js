@@ -57,26 +57,26 @@ const speakerArr = speakersData.map(speaker => {
     </div>`;    
 })
 
-const speakerhtml = document.querySelector(".speakers");
+const speakersList = document.querySelector(".speakers-list");
 
-speakerhtml.innerHTML = speakerArr.slice(0, 2).join('');
+speakersList.innerHTML = speakerArr.slice(0, 2).join('');
 
 const seeMorebutton = document.createElement('div');
 seeMorebutton.classList.add('more')
 seeMorebutton.innerHTML=`MORE <img src="./images/dropdown.png" alt="">`
-speakerhtml.append(seeMorebutton)
+speakersList.append(seeMorebutton)
 
 const seeLessbutton = document.createElement("div");
 seeLessbutton.classList.add("less");
 seeLessbutton.innerHTML = `LESS <img src="./images/dropdown.png" alt="">`;
-speakerhtml.append(seeLessbutton);
+speakersList.append(seeLessbutton);
 seeLessbutton.style.display = 'none';
 
 
 const more=document.querySelector('.more');
 more.addEventListener('click', () => {
-    speakerhtml.innerHTML = speakerArr.join('');
-speakerhtml.append(seeLessbutton);
+    speakersList.innerHTML = speakerArr.join('');
+speakersList.append(seeLessbutton);
 
 seeLessbutton.style.display = 'flex';
     seeMorebutton.style.display = "none";
@@ -88,8 +88,8 @@ seeLessbutton.style.display = 'flex';
 
 const less = document.querySelector(".less");
 less.addEventListener("click", () => {
-  speakerhtml.innerHTML = speakerArr.slice(0, 2).join('');
-    speakerhtml.append(seeMorebutton);
+  speakersList.innerHTML = speakerArr.slice(0, 2).join('');
+    speakersList.append(seeMorebutton);
     seeLessbutton.style.display = "none";
     seeMorebutton.style.display = 'flex';
 
