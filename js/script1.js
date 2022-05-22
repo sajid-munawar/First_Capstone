@@ -58,6 +58,9 @@ const speakerArr = speakersData.map(speaker => {
 })
 
 const speakersList = document.querySelector(".speakers-list");
+const speakersListDesktop = document.querySelector(".speakers-list-desktop");
+speakersListDesktop.innerHTML = speakerArr.join('');
+
 
 speakersList.innerHTML = speakerArr.slice(0, 2).join('');
 

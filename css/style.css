@@ -201,3 +201,18 @@ body {
   transform: rotate(180deg);
 }
 
+.speakers-list-desktop {
+display: none;
+}
+
+@media (min-width:768px){
+.speakers-list-desktop {
+  display: block;
+}
+
+.speakers-list {
+  display: none;
+}
+}
+
+
