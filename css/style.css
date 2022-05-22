@@ -93,15 +93,16 @@ body {
   width: 35px;
 }
 
-.program hr {
+/* .program hr {
   width: 15%;
   margin-left: 43%;
   background-color: orangered;
   border: none;
   height: 2px;
-}
+} */
 
 .join-button {
+      border: 0;
   width: 70%;
   margin: 20px 15%;
   padding: 5%;
@@ -131,10 +132,10 @@ body {
   margin: 0;
 }
 
-.speakers hr {
-  width: 15%;
+hr {
+  width: 10%;
     margin-left: 43%;
-    background-color: orangered;
+    background-color: #ec5242;
     border: none;
     height: 2px;
     margin-bottom: 10%;
@@ -205,6 +206,39 @@ body {
 display: none;
 }
 
+.logos-container {
+      padding: 3% 0;
+  background: #414246;
+}
+
+.logos img {
+  width: 130px;
+  height: auto;
+}
+
+.line-one {
+      margin-top: -55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+      margin-top: -35px;
+      margin-bottom: -15px;
+}
+
+.partner {
+      font-size: 1.5rem;
+    margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+}
+
+
 @media (min-width:768px){
 .speakers-list-desktop {
   display: block;
@@ -213,6 +247,13 @@ display: none;
 .speakers-list {
   display: none;
 }
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 }
 
 
