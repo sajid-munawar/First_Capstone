@@ -186,3 +186,18 @@ body {
   border-radius: 5px;
 }
 
+.less {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c5c0c0;
+  height: 50px;
+  width: 100%;
+  gap: 1%;
+  border-radius: 5px;
+}
+
+.less img {
+  transform: rotate(180deg);
+}
+
