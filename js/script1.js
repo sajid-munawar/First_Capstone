@@ -48,7 +48,7 @@ const html = `<div class="speaker-container">
 
 const speakerArr = speakersData.map(speaker => {
     return `<div class="speaker-container">
-      <img src="${speaker.image}" alt="" class="speaker-image">
+      <img src="${speaker.image}" alt="${speaker.title}" class="speaker-image">
       <div class="speaker-details">
         <h1 class="speaker-title">${speaker.title}</h1>
         <h3 class="red-desc">${speaker.redDesc}</h3>
