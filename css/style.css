@@ -23,6 +23,7 @@ body {
 }
 
 .top h3 {
+  font-size: 1.5rem;
   color: #f15724;
   display: block;
   margin-top: 65px;
@@ -31,6 +32,7 @@ body {
 .top h1 {
   margin-top: -12px;
   color: #d82d0d;
+  font-size: 1.8rem;
 }
 
 .top p {
@@ -260,6 +262,100 @@ display: none;
   font-size: 0.6rem;
 }
 
+.about-top {
+  background-color: rgba(0,0,0,0.07)
+}
+
+.about-top h3 {
+  text-align: center;
+}
+
+.about-p {
+      padding: 5% 4%;
+  background-color: #fff;
+  line-height: 150%;
+  text-align: center;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.about-contact {
+    padding: 5% 11%;
+    text-align: center;
+  background-color: rgba(0,0,0,0.07)
+
+}
+
+.about-contact p {
+      color: #504949;
+}
+
+.email {
+  font-weight: bold;
+  color: #333030 ;
+  text-decoration: underline;
+}
+
+.about-logo {
+  padding: 10% 5%;
+  text-align: center;
+}
+
+.about-logo h2 {
+  color: #333030;
+}
+
+.about-logo p {
+      margin-top: -17px;
+    font-size: 0.8rem;
+    color: #504949;
+}
+
+.about-logo img {
+  border: 1px solid #dadada;
+  padding: 9% 28%;
+}
+
+.ways {
+  padding: 5% 10%;
+  border-top:  1px solid #dadada;;
+  text-align: center;
+}
+
+.ways h2 {
+  color: #333030;
+
+}
+
+.ways p {
+      margin-top: -17px;
+      font-size: 0.8rem;
+    color: #504949;
+        padding-bottom: 5%;
+}
+
+.two-ways {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+
+}
+
+.two-ways div {
+  margin-bottom: 5%;
+ padding: 13% 0;
+}
+
+.two-ways h1 {
+  font-size: 1rem;
+}
+
+.way-one {
+  background: linear-gradient(#ec524280, #ec524280), url(../images/way1bg.jpeg) center/cover no-repeat;
+}
+
+.way-two {
+  background: linear-gradient(#ec524280, #ec524280), url(../images/way2bg.jpeg) center/cover no-repeat;
+}
 
 @media (min-width:768px){
 .speakers-list-desktop {
