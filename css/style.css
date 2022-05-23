@@ -238,6 +238,28 @@ display: none;
   text-align: center;
 }
 
+.home-footer {
+  display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 6% 0;
+}
+
+
+
+.home-footer img {
+      width: 25%;
+    height: auto;
+  }
+  
+  .home-footer p {
+  margin-left: -50px;
+  color: #585353;
+      max-width: 35%;
+  font-size: 0.6rem;
+}
+
 
 @media (min-width:768px){
 .speakers-list-desktop {
