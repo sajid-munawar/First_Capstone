@@ -342,13 +342,11 @@ hr {
 }
 
 .way-one {
-  background: linear-gradient(#ec524280, #ec524280),
-    url(../images/way1bg.jpeg) center/cover no-repeat;
+  background: linear-gradient(#ec524280, #ec524280), url(../images/way1bg.jpeg) center/cover no-repeat;
 }
 
 .way-two {
-  background: linear-gradient(#ec524280, #ec524280),
-    url(../images/way2bg.jpeg) center/cover no-repeat;
+  background: linear-gradient(#ec524280, #ec524280), url(../images/way2bg.jpeg) center/cover no-repeat;
 }
 
 .desktop-top {
@@ -372,6 +370,7 @@ hr {
     background: url(../images/main_big.png) no-repeat;
     background-size: cover;
     background-position: 100% 0%;
+    padding: 5% 5% 5% 7%;
   }
 
   .top-black {
@@ -392,7 +391,6 @@ hr {
 
   .top-white {
     padding: 2% 7%;
-    /* display: flex; */
   }
 
   .top-white a {
@@ -418,10 +416,6 @@ hr {
     justify-content: flex-end;
     align-items: center;
     gap: 5%;
-  }
-
-  .top {
-    padding: 5% 5% 5% 7%;
   }
 
   .top-white ul li:hover {
