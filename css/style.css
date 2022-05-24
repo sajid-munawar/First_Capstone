@@ -358,11 +358,22 @@ hr {
     url(../images/way2bg.jpeg) center/cover no-repeat;
 }
 
+.desktop-top {
+  display: none;
+}
+
 .join-desktop {
   display: none;
 }
 
+#about-global-mobile {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .desktop-top {
+    display: block;
+  }
   .top {
     background: url(../images/main_big.png) no-repeat;
     background-size: cover;
@@ -429,7 +440,7 @@ hr {
   }
 
   .top h1 {
-    max-width: 60%;
+    max-width: 58%;
     font-size: 2.7rem;
   }
 
@@ -441,8 +452,53 @@ hr {
     font-size: 2rem;
   }
 
-  .top p {
+  .about-top h3 {
+    display: none;
+  }
+
+  .about-top h1 {
+    margin-left: 25%;
+    text-align: center;
+    max-width: 52%;
+  }
+
+
+  .home-p {
     max-width: 40%;
+  }
+
+  .about-p {
+    max-width: 50%;
+    padding:5% 22%;
+  }
+
+  .about-contact {
+    background-color: rgba(0, 0, 0, 0.02);
+
+  }
+
+  .about-logo {
+    padding: 5%;
+  }
+
+  .about-logo img {
+    padding: 5% 12%;
+    margin-top: 1.5%;
+  }
+
+  .ways p {
+    margin-top: 0;
+  }
+
+  .two-ways {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding-left: 20%; 
+  }
+  
+  .two-ways div {
+    padding: 5%;
   }
 
   hr {
@@ -492,7 +548,7 @@ hr {
     color: #fff;
   }
 
-  .About-top {
+  .about-top {
     background: url(../images/about_bg_01.png) no-repeat;
     background-position: 38% 42%;
     background-size: contain;
@@ -520,6 +576,25 @@ hr {
     align-items: flex-end;
     padding-top: 3%;
   }
+
+  .desktop-about-logo {
+    display: none;
+  }
+
+  .about-footer {
+    background: #272a31;
+  }
+  
+  .about-footer p {
+    color: white;
+    
+  }
+
+  #about-global-desktop {
+    display: none;
+  }
+
+
 
   .home-footer {
     justify-content: space-evenly;
