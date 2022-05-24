@@ -219,7 +219,7 @@ display: none;
 
 .logos-container {
       padding: 3% 0;
-  background: #414246;
+  background: #272a31;
 }
 
 .logos img {
@@ -373,6 +373,35 @@ display: none;
     background-size: cover;
     background-position: 100% 0%;
 
+  }
+
+  .top-black {
+        padding: 1% 10%;
+    background: #272a31;
+    color: white;
+  }
+
+  .top-black ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+  }
+
+  .top-white {
+        padding: 2% 5%;
+  }
+
+  .top-white a {
+        width: 15%;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .About-top {

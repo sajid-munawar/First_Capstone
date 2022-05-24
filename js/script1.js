@@ -37,14 +37,6 @@ const speakersData = [
   },
 ];
 
-const html = `<div class="speaker-container">
-      <img src="" alt="" class="speaker-image">
-      <div class="speaker-details">
-        <h1 class="speaker-title"></h1>
-        <h3 class="red-desc"></h3>
-        <p class="black-desc"></p>
-      </div>
-    </div>`;
 
 const speakerArr = speakersData.map(speaker => {
     return `<div class="speaker-container">
