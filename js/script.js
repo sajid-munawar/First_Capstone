@@ -72,12 +72,12 @@ speakersList.innerHTML = speakerArr.slice(0, 2).join('');
 
 const seeMorebutton = document.createElement('div');
 seeMorebutton.classList.add('more');
-seeMorebutton.innerHTML = `MORE <img src='./images/dropdown.png' alt=''>`;
+seeMorebutton.innerHTML = 'MORE <img src="./images/dropdown.png" alt="">';
 speakersList.append(seeMorebutton);
 
 const seeLessbutton = document.createElement('div');
 seeLessbutton.classList.add('less');
-seeLessbutton.innerHTML = `LESS <img src='./images/dropdown.png' alt=''>`;
+seeLessbutton.innerHTML = 'LESS <img src="./images/dropdown.png" alt="">';
 speakersList.append(seeLessbutton);
 seeLessbutton.style.display = 'none';
 
