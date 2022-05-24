@@ -433,7 +433,8 @@ hr {
   }
 
   .top h2 {
-    font-size: 1.7rem;
+    max-width: 58%;
+    font-size: 2.7rem;
   }
 
   .top h3 {
@@ -444,7 +445,11 @@ hr {
     display: none;
   }
 
-  .about-top h1 {
+  .about-h2 {
+    text-align: center;
+  }
+
+  .about-top h2 {
     margin-left: 25%;
     text-align: center;
     max-width: 52%;
