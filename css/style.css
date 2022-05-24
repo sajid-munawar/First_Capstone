@@ -374,6 +374,7 @@ hr {
   .desktop-top {
     display: block;
   }
+
   .top {
     background: url(../images/main_big.png) no-repeat;
     background-size: cover;
@@ -462,19 +463,17 @@ hr {
     max-width: 52%;
   }
 
-
   .home-p {
     max-width: 40%;
   }
 
   .about-p {
     max-width: 50%;
-    padding:5% 22%;
+    padding: 5% 22%;
   }
 
   .about-contact {
     background-color: rgba(0, 0, 0, 0.02);
-
   }
 
   .about-logo {
@@ -494,9 +493,9 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 2%;
-    padding-left: 20%; 
+    padding-left: 20%;
   }
-  
+
   .two-ways div {
     padding: 5%;
   }
@@ -584,10 +583,9 @@ hr {
   .about-footer {
     background: #272a31;
   }
-  
+
   .about-footer p {
     color: white;
-    
   }
 
   #about-global-desktop {
@@ -595,10 +593,8 @@ hr {
   }
 
   #about-global-mobile {
-  display: block;
-}
-
-
+    display: block;
+  }
 
   .home-footer {
     justify-content: space-evenly;
