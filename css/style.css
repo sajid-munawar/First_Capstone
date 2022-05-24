@@ -89,7 +89,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   text-align: left;
-  color: #f14d37;
+  color: #ec5242;
 }
 
 .program p {
@@ -381,7 +381,7 @@ hr {
   }
 
   .top-black {
-    padding: 1% 10%;
+    padding: 1% 7%;
     background: #272a31;
     color: white;
   }
@@ -593,6 +593,10 @@ hr {
   #about-global-desktop {
     display: none;
   }
+
+  #about-global-mobile {
+  display: block;
+}
 
 
 
