@@ -35,7 +35,7 @@ body {
   margin-top: 65px;
 }
 
-.top h1 {
+.top h2 {
   margin-top: -12px;
   color: #d82d0d;
   font-size: 1.8rem;
@@ -45,8 +45,9 @@ body {
   color: #504949;
 }
 
-.top h2 {
+.top h4 {
   color: #494747;
+  font-size: 1.8rem;
 }
 
 .program {
@@ -116,15 +117,8 @@ body {
   padding: 5%;
   text-align: center;
   background-color: #ec5242;
-}
-
-.join-button a {
-  display: inline-block;
-  width: 100%;
-  text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
-  /* padding: 1.5rem; */
 }
 
 .speakers {
@@ -283,7 +277,7 @@ hr {
 .about-contact {
   padding: 5% 11%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .about-contact p {
@@ -543,6 +537,7 @@ hr {
   }
 
   .join-desktop {
+    display: block;
     margin-left: 40%;
     color: #fff;
   }
