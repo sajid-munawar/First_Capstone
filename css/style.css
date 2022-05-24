@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  background: url(../images/backgroundM.png);
+  background-repeat: no-repeat;
 }
 
 .top {
@@ -24,7 +28,7 @@ body {
 
 .top h3 {
   font-size: 1.5rem;
-  color: #f15724;
+  color: #ec5242;
   display: block;
   margin-top: 65px;
 }
