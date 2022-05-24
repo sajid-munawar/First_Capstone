@@ -366,6 +366,10 @@ display: none;
   background: linear-gradient(#ec524280, #ec524280), url(../images/way2bg.jpeg) center/cover no-repeat;
 }
 
+.join-desktop {
+  display: none;
+}
+
 @media (min-width:768px){
 
   .top {
@@ -436,8 +440,8 @@ display: none;
   }
 
   .top h1 {
-        max-width: 50%;
-            font-size: 2.8rem;
+max-width: 60%;
+    font-size: 2.7rem;
 }
 
 .top h2 {
@@ -512,7 +516,16 @@ color: #fff;
 
 
 .speakers-list-desktop {
-  display: block;
+     display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2,1fr) ;
+        padding: 1% 12%;
+    gap: 1%;
+
+}
+
+.speakers {
+  padding: 5% 2%;
 }
 
 .speakers-list {
@@ -523,6 +536,16 @@ color: #fff;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding-top: 3%;
+}
+
+.home-footer {
+  justify-content: space-evenly;
+}
+
+.home-footer img {
+    width: 12%;
+    height: auto;
 }
 
 }

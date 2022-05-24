@@ -1,16 +1,20 @@
 const speakersData = [
-    {
-        image:'images/speaker1.jpg',
-        title:'Jon Acuff',
-        redDesc:'Leadership Expert; Inc. Top 100 Leadership Speaker; New York Times Best-Selling Author',
-        blackDesc:'Jon Acuff is the New York Times best-selling author of seven books, including his newest release, Soundtracks: The Surprising Solution to Overthinking.'
-    },
-    {
-        image:'images/speaker2.jpg',
-        title:'Stephanie Chung',
-        redDesc:'Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association',
-        blackDesc:'With over 30 years of experience catalyzing transformative growth in the aviation sector, Stephanie Chung has widely been recognized as a trailblazer. '
-    },
+  {
+    image: "images/speaker1.jpg",
+    title: "Jon Acuff",
+    redDesc:
+      "Leadership Expert; Inc. Top 100 Leadership Speaker; New York Times Best-Selling Author",
+    blackDesc:
+      "Jon Acuff is the New York Times best-selling author of seven books, including his newest release, Soundtracks: The Surprising Solution to Overthinking.",
+  },
+  {
+    image: "images/speaker2.jpg",
+    title: "Stephanie Chung",
+    redDesc:
+      "Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association",
+    blackDesc:
+      "With over 30 years of experience catalyzing transformative growth in the aviation sector, Stephanie Chung has widely been recognized as a trailblazer. ",
+  },
   {
     image: "images/speaker3.jpg",
     title: "Andy Stanley",
@@ -34,6 +38,14 @@ const speakersData = [
       "President & CEO, SHRM, the Society for Human Resource Management; Former President & CEO, Thurgood Marshall College Fund; Best-Selling Author",
     blackDesc:
       "Driving social and economic change in the workplace, Taylor leads SHRM toward fostering mutually beneficial work environments that serve both business and employees",
+  },
+  {
+    image: "images/speaker6.jpg",
+    title: "Deb Liu",
+    redDesc:
+      "President & CEO, Ancestry; Award-Winning Tech Leader; Founder, Women In Product; New York Times Best-Selling Author",
+    blackDesc:
+      "With over 19 years in the tech industry, Deb Liu has been named one of Business Insider’s most powerful female engineers and one of PaymentsSource’s most influential women in payments"
   },
 ];
 
