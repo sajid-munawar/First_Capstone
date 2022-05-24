@@ -1,104 +1,99 @@
 const speakersData = [
   {
-    image: "images/speaker1.jpg",
-    title: "Jon Acuff",
+    image: 'images/speaker1.jpg',
+    title: 'Jon Acuff',
     redDesc:
-      "Leadership Expert; Inc. Top 100 Leadership Speaker; New York Times Best-Selling Author",
+      'Leadership Expert; Inc. Top 100 Leadership Speaker; New York Times Best-Selling Author',
     blackDesc:
-      "Jon Acuff is the New York Times best-selling author of seven books, including his newest release, Soundtracks: The Surprising Solution to Overthinking.",
+      'Jon Acuff is the New York Times best-selling author of seven books, including his newest release, Soundtracks: The Surprising Solution to Overthinking.',
   },
   {
-    image: "images/speaker2.jpg",
-    title: "Stephanie Chung",
+    image: 'images/speaker2.jpg',
+    title: 'Stephanie Chung',
     redDesc:
-      "Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association",
+      'Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association',
     blackDesc:
-      "With over 30 years of experience catalyzing transformative growth in the aviation sector, Stephanie Chung has widely been recognized as a trailblazer. ",
+      'With over 30 years of experience catalyzing transformative growth in the aviation sector, Stephanie Chung has widely been recognized as a trailblazer. ',
   },
   {
-    image: "images/speaker3.jpg",
-    title: "Andy Stanley",
+    image: 'images/speaker3.jpg',
+    title: 'Andy Stanley',
     redDesc:
-      "Founder & Pastor, North Point Ministries; Host, Your Move with Andy Stanley ; Best-Selling Author",
+      'Founder & Pastor, North Point Ministries; Host, Your Move with Andy Stanley ; Best-Selling Author',
     blackDesc:
-      "Communicator, author, and pastor Andy Stanley founded Atlanta-based North Point Ministries (NPM) in 1995. Today, NPM consists of eight churches in the Atlanta area",
+      'Communicator, author, and pastor Andy Stanley founded Atlanta-based North Point Ministries (NPM) in 1995. Today, NPM consists of eight churches in the Atlanta area',
   },
   {
-    image: "images/speaker4.jpg",
-    title: "Sahar Hashemi",
+    image: 'images/speaker4.jpg',
+    title: 'Sahar Hashemi',
     redDesc:
-      "Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director, Scale Up Institute; Best-Selling Author",
+      'Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director, Scale Up Institute; Best-Selling Author',
     blackDesc:
-      "Described as “a change agent” and “a powerful catalyst to drive entrepreneurship within big corporations”, Sahar Hashemi offers a simple, powerful toolkit to unlock start-up culture at big companies.",
+      'Described as “a change agent” and “a powerful catalyst to drive entrepreneurship within big corporations”, Sahar Hashemi offers a simple, powerful toolkit to unlock start-up culture at big companies.',
   },
   {
-    image: "images/speaker5.jpg",
-    title: "Johnny C. Taylor, Jr.",
+    image: 'images/speaker5.jpg',
+    title: 'Johnny C. Taylor, Jr.',
     redDesc:
-      "President & CEO, SHRM, the Society for Human Resource Management; Former President & CEO, Thurgood Marshall College Fund; Best-Selling Author",
+      'President & CEO, SHRM, the Society for Human Resource Management; Former President & CEO, Thurgood Marshall College Fund; Best-Selling Author',
     blackDesc:
-      "Driving social and economic change in the workplace, Taylor leads SHRM toward fostering mutually beneficial work environments that serve both business and employees",
+      'Driving social and economic change in the workplace, Taylor leads SHRM toward fostering mutually beneficial work environments that serve both business and employees',
   },
   {
-    image: "images/speaker6.jpg",
-    title: "Deb Liu",
+    image: 'images/speaker6.jpg',
+    title: 'Deb Liu',
     redDesc:
-      "President & CEO, Ancestry; Award-Winning Tech Leader; Founder, Women In Product; New York Times Best-Selling Author",
+      'President & CEO, Ancestry; Award-Winning Tech Leader; Founder, Women In Product; New York Times Best-Selling Author',
     blackDesc:
-      "With over 19 years in the tech industry, Deb Liu has been named one of Business Insider’s most powerful female engineers and one of PaymentsSource’s most influential women in payments"
+      'With over 19 years in the tech industry, Deb Liu has been named one of Business Insider’s most powerful female engineers and one of PaymentsSource’s most influential women in payments',
   },
 ];
 
-
-const speakerArr = speakersData.map(speaker => {
-    return `<div class="speaker-container">
-      <img src="${speaker.image}" alt="${speaker.title}" class="speaker-image">
-      <div class="speaker-details">
-        <h1 class="speaker-title">${speaker.title}</h1>
-        <h3 class="red-desc">${speaker.redDesc}</h3>
-        <p class="black-desc">${speaker.blackDesc}</p>
+function generateSpeaker({
+  image, title, redDesc, blackDesc,
+}) {
+  return `<div class='speaker-container'>
+      <img src='${image}' alt='${title}' class='speaker-image'>
+      <div class='speaker-details'>
+        <h1 class='speaker-title'>${title}</h1>
+        <h3 class='red-desc'>${redDesc}</h3>
+        <p class='black-desc'>${blackDesc}</p>
       </div>
-    </div>`;    
-})
+    </div>`;
+}
 
-const speakersList = document.querySelector(".speakers-list");
-const speakersListDesktop = document.querySelector(".speakers-list-desktop");
+const speakerArr = speakersData.map((speaker) => generateSpeaker(speaker));
+
+const speakersList = document.querySelector('.speakers-list');
+const speakersListDesktop = document.querySelector('.speakers-list-desktop');
 speakersListDesktop.innerHTML = speakerArr.join('');
-
 
 speakersList.innerHTML = speakerArr.slice(0, 2).join('');
 
 const seeMorebutton = document.createElement('div');
-seeMorebutton.classList.add('more')
-seeMorebutton.innerHTML=`MORE <img src="./images/dropdown.png" alt="">`
-speakersList.append(seeMorebutton)
+seeMorebutton.classList.add('more');
+seeMorebutton.innerHTML = `MORE <img src='./images/dropdown.png' alt=''>`;
+speakersList.append(seeMorebutton);
 
-const seeLessbutton = document.createElement("div");
-seeLessbutton.classList.add("less");
-seeLessbutton.innerHTML = `LESS <img src="./images/dropdown.png" alt="">`;
+const seeLessbutton = document.createElement('div');
+seeLessbutton.classList.add('less');
+seeLessbutton.innerHTML = `LESS <img src='./images/dropdown.png' alt=''>`;
 speakersList.append(seeLessbutton);
 seeLessbutton.style.display = 'none';
 
-
-const more=document.querySelector('.more');
+const more = document.querySelector('.more');
 more.addEventListener('click', () => {
-    speakersList.innerHTML = speakerArr.join('');
-speakersList.append(seeLessbutton);
+  speakersList.innerHTML = speakerArr.join('');
+  speakersList.append(seeLessbutton);
 
-seeLessbutton.style.display = 'flex';
-    seeMorebutton.style.display = "none";
-    
-    
-
-    
+  seeLessbutton.style.display = 'flex';
+  seeMorebutton.style.display = 'none';
 });
 
-const less = document.querySelector(".less");
-less.addEventListener("click", () => {
+const less = document.querySelector('.less');
+less.addEventListener('click', () => {
   speakersList.innerHTML = speakerArr.slice(0, 2).join('');
-    speakersList.append(seeMorebutton);
-    seeLessbutton.style.display = "none";
-    seeMorebutton.style.display = 'flex';
-
-    
+  speakersList.append(seeMorebutton);
+  seeLessbutton.style.display = 'none';
+  seeMorebutton.style.display = 'flex';
 });
