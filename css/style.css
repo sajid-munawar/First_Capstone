@@ -393,16 +393,115 @@ display: none;
   }
 
   .top-white {
-        padding: 2% 5%;
+        padding: 2% 7%;
+        /* display: flex; */
   }
 
   .top-white a {
         width: 15%;
+        float: left;
+        text-decoration: none;
+        color: black;
+  }
+
+  .top-white a:hover {
+    color: #ec5242;
+  } 
+
+  .cc-campaign {
+    border: 4px solid #ec5242;
+    padding: 2%;
+  }
+
+  .top-white ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;  
+      justify-content: flex-end;
+      align-items: center;
+    gap: 5%;
+  }
+
+  .top {
+    padding: 5% 5% 5% 7%;
+  }
+
+  .top-white ul li:hover {
+    cursor: pointer;
+    color: #ec5242;
   }
 
   .hamburger {
     display: none;
   }
+
+  .top h1 {
+        max-width: 50%;
+            font-size: 2.8rem;
+}
+
+.top h2 {
+  font-size: 1.7rem;
+}
+
+.top h3 {
+  font-size: 2rem;
+}
+
+.top p {
+  max-width: 40%;
+}
+
+hr {
+  width: 3%;
+      margin-left: 49%;
+      margin-bottom: 2%;
+}
+
+.program {
+      padding: 85px 10px;
+}
+
+.program-container {
+  display: flex;
+      padding: 1% 12% 5% 12%;
+
+}
+
+.program h1 {
+      margin-top: -2%;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-card:hover {
+  border: 2px solid white;
+}
+
+.program .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.program .right {
+          margin-top: -30px;
+    padding: 0 20%;
+}
+
+.join-button {
+  display: none;
+}
+
+.join-desktop {
+margin-left: 40%;
+color: #fff;
+}
+
+
+  
 
   .About-top {
     background: url(../images/about_bg_01.png) no-repeat;
