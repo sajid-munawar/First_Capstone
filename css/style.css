@@ -5,13 +5,18 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  background: url(../images/backgroundM.png);
-  background-repeat: no-repeat;
 }
 
 .top {
   padding: 5%;
+      background: url(../images/mobile_intro_bg.png) no-repeat;
+    background-size: 100%;
+    background-clip: border-box;
+    background-position: 125% 30%;
 }
+
+
+
 
 .hamburger {
   display: block;
@@ -362,6 +367,22 @@ display: none;
 }
 
 @media (min-width:768px){
+
+  .top {
+    background: url(../images/main_big.png) no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+
+  }
+
+  .About-top {
+    background: url(../images/about_bg_01.png) no-repeat;
+    background-position: 38% 42%;
+    background-size: contain;
+
+  }
+
+
 .speakers-list-desktop {
   display: block;
 }
