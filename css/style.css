@@ -43,6 +43,7 @@ body {
 
 .top p {
   color: #504949;
+  padding: 1%;
 }
 
 .top h4 {
@@ -353,6 +354,14 @@ hr {
   display: none;
 }
 
+@media (max-width: 768px) {
+  #p-for-mobile {
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding: 2%;
+  }
+}
+
 @media (min-width: 768px) {
   .desktop-top {
     display: block;
@@ -453,6 +462,9 @@ hr {
 
   .home-p {
     max-width: 40%;
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding: 1%;
   }
 
   .about-p {
