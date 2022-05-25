@@ -260,6 +260,8 @@ hr {
 }
 
 .about-top h3 {
+  color: #ec5242;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -365,6 +367,10 @@ hr {
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     padding: 2%;
   }
+
+  .about-h2 {
+    color: #ec5242;
+  }
 }
 
 @media (min-width: 768px) {
@@ -465,6 +471,7 @@ hr {
   }
 
   .about-top h2 {
+    color: #ec5242;
     margin-left: 25%;
     text-align: center;
     max-width: 52%;
