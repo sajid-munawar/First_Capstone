@@ -124,7 +124,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10% 2%;
+  padding: 10% 4%;
 }
 
 .feature-h1 {
@@ -150,6 +150,14 @@ hr {
 .speaker-image {
   width: 100px;
   height: 100px;
+  padding-top: 12%;
+  padding-left: 12%;
+}
+
+#wrapper {
+  background: url(../images/blank-chess-board.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .speaker-details {

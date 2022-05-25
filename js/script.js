@@ -53,7 +53,7 @@ function generateSpeaker({
   image, title, redDesc, blackDesc,
 }) {
   return `<div class='speaker-container'>
-      <img src='${image}' alt='${title}' class='speaker-image'>
+      <div id='wrapper'><img src='${image}' alt='${title}' class='speaker-image'></div>
       <div class='speaker-details'>
         <h1 class='speaker-title'>${title}</h1>
         <h3 class='red-desc'>${redDesc}</h3>
