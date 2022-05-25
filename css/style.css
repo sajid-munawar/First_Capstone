@@ -28,17 +28,22 @@ body {
   background-color: #676767;
 }
 
-.top h3 {
-  font-size: 1.5rem;
-  color: #ec5242;
+.main-title h3 {
   display: block;
   margin-top: 65px;
+  font-size: 30px;
+  color: orangered;
+  font-weight: 300;
 }
 
-.top h2 {
+.main-title h2 {
   margin-top: -12px;
-  color: #d82d0d;
-  font-size: 1.8rem;
+  font-size: 37px;
+  background-image: url(../images/heading-bg.webp);
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
 }
 
 .top p {
@@ -439,6 +444,12 @@ hr {
   .top h2 {
     max-width: 58%;
     font-size: 2.7rem;
+    background-image: url(../images/heading-bg.webp);
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    line-height: 60px;
   }
 
   .top h3 {
